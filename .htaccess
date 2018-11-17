@@ -4,7 +4,9 @@
     </IfModule>
 
     RewriteEngine On
-
+    
+    # Remove public/ da url tanto das paginas quanto dos arquivos css
+    RewriteRule ^(.*)$ public/$1 [L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -19,4 +21,9 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+    
+    # Por padrão, a instalação Laravel fica exibindo uma pasta /public/
+    # Para que esta pasta não seja mais exibida, adicione as seguintes linhas de código em sua .htaccess:
+    RewriteRule ^(.*)$ public/$1 [L] 
+
 </IfModule>

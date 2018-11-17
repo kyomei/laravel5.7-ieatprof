@@ -1,0 +1,45 @@
+// Small devices (landscape phones, 576px and up)
+@media only screen and (max-width: 768px) { 
+    header {
+        padding-top: 0px !important;
+        .row:first-child{
+            background-color: $green-bg !important;
+            color: $white !important;            
+            display: block  !important;
+            text-align: center;
+        }
+        .contact {
+            strong {
+                font-size: 18px !important;
+            }
+            div{
+                margin-top: 0px !important;
+            }
+        }
+        .img-logo{
+            display: block !important;
+            margin: auto !important;
+            padding-top: 7px !important;
+        }
+    }
+}
+
+header {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    .row:first-child{
+        display: none;
+    }
+    .contact {
+        text-align: right;
+        strong {
+            font-size: 24px;
+            font-family: 'Bree Serif', sans-serif;
+            color: $green-bg;
+        }
+        div {
+            line-height: 17px;
+           margin-top: 20px;
+        }
+    }
+}
