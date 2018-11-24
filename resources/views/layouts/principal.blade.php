@@ -8,6 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet"  type="text/css" href="{{ asset('/css/style.css') }}" />
+        
+        <!-- Favicon logo -->
+        <link rel="shortcut icon" type="image/png" href="https://ieatprofissionalizante.com.br/assets/img/layout/logo_favicon.png">
     </head>
     <body>
 

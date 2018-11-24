@@ -6,4 +6,7 @@
 @section('conteudo')
     @include('layouts.carousel')
 
+     @component('components.breadcrumb') 
+    
+    @endcomponent
 @stop

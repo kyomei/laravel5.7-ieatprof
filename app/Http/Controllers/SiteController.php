@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Http\Controllers\Controller;
+// Classe para acessar metodos do banco de dados
+use Illuminate\Support\Facades\DB;
 
 class SiteController extends Controller {
     /* Método responsável pela exibição das informações na pág home */
