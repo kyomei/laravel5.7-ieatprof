@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/01/2019, 15:53:44
+    Author     : kyomei
+*/
+body {
+    font-family: $font-openSans;
+}
+/* style page quem-somos */
+section.area-about {
+    padding: 44px 0;
+    h1 {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        color: $color1;
+        margin: 20px 0;
+    }
+    p {
+        text-align: justify;
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 1.4em;
+        line-height: 1.6;
+    }
+}
+/* style page fale-conosco */
+section.area-contact {
+    padding: 24px 0;
+    h1 {
+        color: $color1;
+        font-size: 1.6rem;
+        font-weight: bold;
+        font-family: $font-lato;
+    }
+    h2 {
+        color: $color1;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    p {
+        font-size: 1rem;
+    }
+    label {
+        font-weight: bold;
+    }
+}
