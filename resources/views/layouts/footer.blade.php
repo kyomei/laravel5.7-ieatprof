@@ -1,6 +1,6 @@
-<!-- Start header -->
+<!-- Start footer -->
 <footer>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <h1>Localização da escola</h1>
@@ -18,6 +18,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container-fluid">
         <div class="row copyright">
             <div class="col-md-12">
                 <p>Desenvolvedor <a href="mailto:rafa.jefer@gmail.com">Rafael Jeferson</a> <br />Instituto Educacional Alto Tietê © 2017 - Todos Direitos Reservados </p>
@@ -25,4 +27,4 @@
         </div>
     </div>
 </footer>
-<!-- End.\ header -->
+<!-- End.\ footer -->

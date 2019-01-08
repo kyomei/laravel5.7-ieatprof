@@ -10,7 +10,7 @@
 @endcomponent
 <!-- START CONTENT QUEM SOMOS -->
 <section>
-    <div class="container">
+    <div class="container area-about">
         <div class="row">
             <div class="col-sm-12">
                 <h1>QUEM SOMOS</h1>
