@@ -6,6 +6,11 @@ body {
     text-align: center;
 }
 */
+/* Imports google fonts */
+@import url("https://fonts.googleapis.com/css?family=Charm");
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -15,18 +20,47 @@ and open the template in the editor.
     Created on : 08/01/2019, 10:53:44
     Author     : kyomei
 */
-.container.area-about h1 {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: #116b5f;
-  margin-bottom: 20px;
-  margin-top: 20px; }
-.container.area-about p {
-  text-align: justify;
-  font-family: 'Advent Pro', sans-serif;
-  font-size: 1.1em;
-  line-height: 1.6; }
+body {
+  font-family: "Open Sans", sans-serif; }
 
+/* style page quem-somos */
+.container.area-about {
+  padding: 24px 0; }
+  .container.area-about h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #116b5f;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .container.area-about p {
+    text-align: justify;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6; }
+
+/* style page fale-conosco */
+section.area-contact {
+  padding: 24px 0; }
+  section.area-contact h1 {
+    color: #116B5F;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: "Lato", sans-serif; }
+  section.area-contact h2 {
+    color: #116B5F;
+    font-size: 1.2rem;
+    font-weight: bold; }
+  section.area-contact p {
+    font-size: 1rem; }
+  section.area-contact label {
+    font-weight: bold; }
+
+/*
+section.contato h1{color:#2A6E64; font-size: 24px; font-weight: bold;  font-family: "Advent Pro", sans-serif; }
+section.contato h2{color:#2A6E64; font-size: 20px; font-weight: bold;  font-family: "Advent Pro", sans-serif; }
+section.label{color:#2A6E64;}
+section.contato p{color:#6a6a6a;}
+*/
 .area-jumbotron {
   background-color: #F4F4F4; }
 
@@ -78,7 +112,28 @@ header {
 
 /* navbar website */
 .navbar {
-  background: #116B5F !important; }
+  background: #116B5F !important;
+  padding: 0; }
+
+.nav-link {
+  padding: .9rem 1rem; }
+
+/*
+.navbar-dark .navbar-nav .active>.nav-link{
+    color: $white;
+    border-bottom: 2px $white solid;
+}
+
+
+nav.navbar-dark ul.navbar-nav a:hover { border-color: #f14444; }
+*/
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+  color: #29FFE2;
+  text-shadow: 0px 0px 1px #000; }
+
+.navbar-dark .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  color: red;
+  border-bottom: #29FFE2 3px solid; }
 
 .col-item {
   border: 1px solid #E1E1E1;
