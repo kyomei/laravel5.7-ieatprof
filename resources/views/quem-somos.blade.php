@@ -9,8 +9,8 @@
 <li class="breadcrumb-item active">Quem somos</li>
 @endcomponent
 <!-- START CONTENT QUEM SOMOS -->
-<section>
-    <div class="container area-about">
+<section class="area-about">
+    <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <h1>QUEM SOMOS</h1>

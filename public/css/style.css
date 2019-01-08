@@ -11,6 +11,22 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Advent+Pro);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Lato");
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -20,22 +36,39 @@ and open the template in the editor.
     Created on : 08/01/2019, 10:53:44
     Author     : kyomei
 */
+.area-breadcrumb {
+  background-color: #F4F4F4; }
+
+.breadcrumb {
+  background-color: #F4F4F4;
+  padding-top: 20px; }
+  .breadcrumb li a {
+    color: #2a6e64; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/01/2019, 15:53:44
+    Author     : kyomei
+*/
 body {
   font-family: "Open Sans", sans-serif; }
 
 /* style page quem-somos */
-.container.area-about {
-  padding: 24px 0; }
-  .container.area-about h1 {
+section.area-about {
+  padding: 44px 0; }
+  section.area-about h1 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    color: #116b5f;
-    margin-bottom: 20px;
-    margin-top: 20px; }
-  .container.area-about p {
+    color: #116B5F;
+    margin: 20px 0; }
+  section.area-about p {
     text-align: justify;
     font-family: 'Advent Pro', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.4em;
     line-height: 1.6; }
 
 /* style page fale-conosco */
@@ -54,21 +87,6 @@ section.area-contact {
     font-size: 1rem; }
   section.area-contact label {
     font-weight: bold; }
-
-/*
-section.contato h1{color:#2A6E64; font-size: 24px; font-weight: bold;  font-family: "Advent Pro", sans-serif; }
-section.contato h2{color:#2A6E64; font-size: 20px; font-weight: bold;  font-family: "Advent Pro", sans-serif; }
-section.label{color:#2A6E64;}
-section.contato p{color:#6a6a6a;}
-*/
-.area-jumbotron {
-  background-color: #F4F4F4; }
-
-.breadcrumb {
-  background-color: #F4F4F4;
-  padding-top: 20px; }
-  .breadcrumb li a {
-    color: #2a6e64; }
 
 @media only screen and (max-width: 768px) {
   header {
