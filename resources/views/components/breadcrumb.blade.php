@@ -1,7 +1,12 @@
-<!-- start nav-breadcrumb -->
-<nav aria-label="breadcrumb text-right">
-    <ol class="breadcrumb">
-        {{ $slot }}
-    </ol>
-</nav>
-<!-- end /.nav-breadcrumb -->
+
+<!-- Start nav-breadcrumb -->
+<div class="nav area-jumbotron">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb float-right">
+                {{ $slot }}
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- End.\ Nav-breadcrumb -->

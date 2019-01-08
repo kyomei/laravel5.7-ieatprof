@@ -6,6 +6,36 @@ body {
     text-align: center;
 }
 */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/01/2019, 10:53:44
+    Author     : kyomei
+*/
+.container h1 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #116b5f;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+.container p {
+  text-align: justify;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6; }
+
+.area-jumbotron {
+  background-color: #F4F4F4; }
+
+.breadcrumb {
+  background-color: #F4F4F4;
+  padding-top: 20px; }
+  .breadcrumb li a {
+    color: #2a6e64; }
+
 @media only screen and (max-width: 768px) {
   header {
     padding-top: 0px !important; }
