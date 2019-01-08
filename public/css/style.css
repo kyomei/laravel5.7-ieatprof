@@ -10,7 +10,7 @@ body {
   header {
     padding-top: 0px !important; }
     header .row:first-child {
-      background-color: #1C2128 !important;
+      background-color: #116B5F !important;
       color: #ffffff !important;
       display: block  !important;
       text-align: center; }
@@ -32,7 +32,7 @@ header {
     header .contact strong {
       font-size: 24px;
       font-family: 'Bree Serif', sans-serif;
-      color: #1C2128; }
+      color: #116B5F; }
     header .contact div {
       line-height: 17px;
       margin-top: 20px; }
@@ -48,7 +48,7 @@ header {
 
 /* navbar website */
 .navbar {
-  background: #1C2128 !important; }
+  background: #116B5F !important; }
 
 .col-item {
   border: 1px solid #E1E1E1;
@@ -387,7 +387,7 @@ and open the template in the editor.
 /* footer website */
 footer {
   color: #ffffff;
-  background-color: #1C2128;
+  background-color: #116B5F;
   padding-top: 20px; }
   footer .copyright {
     background-color: #343A40;
