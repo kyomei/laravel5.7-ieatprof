@@ -40,7 +40,7 @@
                         <textarea class="form-control" rows="5" id="mensagem" name="mensagem" maxlength="255" required="required" placeholder="Digite sua mensagem" ></textarea>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                        <button type="submit" class="btn btn-default btn-lg">Enviar</button>
                     </div>
                 </form>
             </div>

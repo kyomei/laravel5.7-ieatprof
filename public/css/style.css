@@ -27,15 +27,19 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 08/01/2019, 10:53:44
     Author     : kyomei
 */
+/* button */
+.btn-default {
+  background: #2A6E64;
+  color: #fff; }
+  .btn-default:hover {
+    background: #318f7e;
+    color: #fff; }
+
+/* breadcrumb */
 .area-breadcrumb {
   background-color: #F4F4F4; }
 
@@ -135,6 +139,13 @@ header {
 
 .nav-link {
   padding: .9rem 1rem; }
+
+/* button da navbar mobile */
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  /* border-color: rgba(255,255,255,.1); */
+  background: #1b5850;
+  margin-right: 5px; }
 
 /*
 .navbar-dark .navbar-nav .active>.nav-link{
