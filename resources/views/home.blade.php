@@ -4,7 +4,16 @@
 
 
 @section('conteudo')
-    @include('layouts.carousel')
+@include('layouts.carousel')
 
-     
-@stop
+<section>
+    <section class="area-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>fdafasdfasdf</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    @stop

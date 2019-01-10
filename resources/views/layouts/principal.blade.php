@@ -23,7 +23,7 @@
             
 
         @include('layouts.footer')
-
+        
         <script src="https://ieatprofissionalizante.com.br/assets/js/font-awesome.js"></script>
 
         <!-- jQuery library -->

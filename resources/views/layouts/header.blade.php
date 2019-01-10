@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-6 img-logo-div">
                 <a href="{{url('/')}}" title="Página inicial">
-                    <img src="https://ieatprofissionalizante.com.br/assets/img/layout/logo.png" width="380" alt="Instituto Educacional Alto Tietê" class="img-logo img-fluid">
+                    <img src="{{asset('/img/layout/logo-instituto-educacional-alto-tiete.png')}}" width="380" alt="Instituto Educacional Alto Tietê" class="img-logo img-fluid">
                 </a>
             </div>
             <div class="col-md-6 contact">

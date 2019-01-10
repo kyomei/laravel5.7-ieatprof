@@ -24,3 +24,16 @@
         color: #2a6e64;
     }
 }
+
+/* Make the image fully responsive */
+.carousel-inner {
+    height: auto !important;
+}
+  .carousel-inner img {
+      width: 100%;
+      height: auto;
+  }
+  .carousel-item {
+      min-height: 100px !important;
+      height: auto !important;
+  }
