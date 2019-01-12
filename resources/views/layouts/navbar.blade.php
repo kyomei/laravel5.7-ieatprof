@@ -23,6 +23,10 @@
                     <a class="dropdown-item" href="{{url('cursos/pacote-de-cursos')}}">Pacote de cursos</a>
                 </div>
             </li>
+            <li class="nav-item {{ Request::segment(1) === 'mural' ? 'active' : null }}">
+                <a class="nav-link" href="{{url('mural')}}">Mural  <span class="sr-only">(current)</span>
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
