@@ -26,6 +26,12 @@ class SiteController extends Controller {
         return view('fale-conosco');
     }
 
+    /* Método responsável pela exibição das informações na pág mural */
+
+    public function mural() {
+        return view('mural');
+    }
+
     /* Método responsável pela exibição das informações na pág cursos */
 
     public function cursos() {
