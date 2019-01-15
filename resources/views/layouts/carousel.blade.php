@@ -3,22 +3,16 @@
      <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://api-vendas.azurewebsites.net/Imagens/Slide/01.png" alt="First slide">
+                <img src="{{asset('/img/banner/slider_01.png')}}" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img src="https://api-vendas.azurewebsites.net/Imagens/Slide/02.png" alt="First slide">
+                <img src="{{asset('/img/banner/slider_02.png')}}" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img src="https://api-vendas.azurewebsites.net/Imagens/Slide/05.png" alt="First slide">
+                <img src="{{asset('/img/banner/slider_03.png')}}" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img src="{{asset('/img/banner/banner_engenharia_civil.png')}}" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img src="{{asset('/img/banner/banner_gestao_da_comunicacao.png')}}" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img src="{{asset('/img/banner/slider_curso_psicopedagogia.png')}}" alt="Third slide">
+                <img src="{{asset('/img/banner/slider_04.png')}}" alt="First slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

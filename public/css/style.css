@@ -11,6 +11,7 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Advent+Pro);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 /* width */
 ::-webkit-scrollbar {
   width: 10px; }
@@ -33,11 +34,19 @@ body {
 */
 /* button */
 .btn-default {
-  background: #2A6E64;
+  background: #28a745;
   color: #fff; }
   .btn-default:hover {
     background: #318f7e;
     color: #fff; }
+
+/* hr */
+.hr-custom {
+  border: 2px solid #28a745;
+  border-top: none;
+  text-align: center !important;
+  width: 100px;
+  margin: 0 auto; }
 
 /* breadcrumb */
 .area-breadcrumb {
@@ -61,11 +70,225 @@ body {
   min-height: 100px !important;
   height: auto !important; }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
+/* btn animate */
+.btn-animate {
+  -vendor-animation-duration: 4s !important;
+  -vendor-animation-delay: 2s !important;
+  -vendor-animation-iteration-count: infinite !important;
+  animation-duration: 4s !important;
+  animation-delay: 2s !important;
+  animation-iteration-count: infinite !important; }
+
+/* paddings */
+.padding10 {
+  padding: 10px; }
+
+.padding20 {
+  padding: 20px; }
+
+.padding30 {
+  padding: 30px; }
+
+.padding40 {
+  padding: 40px; }
+
+.padding50 {
+  padding: 50px; }
+
+.padding-top10 {
+  padding-top: 10px; }
+
+.padding-top20 {
+  padding-top: 20px; }
+
+.padding-top30 {
+  padding-top: 30px; }
+
+.padding-top40 {
+  padding-top: 40px; }
+
+.padding-top50 {
+  padding-top: 50px; }
+
+.padding-bottom10 {
+  padding-bottom: 10px; }
+
+.padding-bottom20 {
+  padding-bottom: 20px; }
+
+.padding-bottom30 {
+  padding-bottom: 30px; }
+
+.padding-bottom40 {
+  padding-bottom: 40px; }
+
+.padding-bottom50 {
+  padding-bottom: 50px; }
+
+/* margins */
+.margin-top10 {
+  margin-top: 10px; }
+
+.margin-top20 {
+  margin-top: 20px; }
+
+.margin-top30 {
+  margin-top: 30px; }
+
+.margin-top40 {
+  margin-top: 40px; }
+
+.margin-top50 {
+  margin-top: 50px; }
+
+.margin-top60 {
+  margin-top: 60px; }
+
+.margin-top70 {
+  margin-top: 70px; }
+
+.margin-top80 {
+  margin-top: 80px; }
+
+.margin-top90 {
+  margin-top: 90px; }
+
+.margin-top100 {
+  margin-top: 100px; }
+
+.margin-bottom10 {
+  margin-bottom: 10px; }
+
+.margin-bottom20 {
+  margin-bottom: 20px; }
+
+.margin-bottom30 {
+  margin-bottom: 30px; }
+
+.margin-bottom40 {
+  margin-bottom: 40px; }
+
+.margin-bottom50 {
+  margin-bottom: 50px; }
+
+.margin-bottom60 {
+  margin-bottom: 60px; }
+
+.margin-bottom70 {
+  margin-bottom: 70px; }
+
+.margin-bottom80 {
+  margin-bottom: 80px; }
+
+.margin-bottom90 {
+  margin-bottom: 90px; }
+
+.margin-bottom100 {
+  margin-bottom: 100px; }
+
+/* borders */
+.form-cart .form-group label {
+  color: #333;
+  font-family: 'Advent Pro';
+  font-size: 16px; }
+
+.form-cart .form-group {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0px; }
+
+.form-cart .form-group:last-child {
+  border: none; }
+
+.back-white {
+  background: #fff; }
+
+.color-green {
+  color: #60A917; }
+
+.color-red {
+  color: #F44336; }
+
+.btn-custom {
+  background: #104547;
+  border-bottom: 2px #0f3d46 solid;
+  color: white; }
+
+.btn-custom:hover {
+  background: #0f3d46;
+  color: white; }
+
+/* Backgrounds colors */
+.bg-green-thema {
+  background: #2A6E64;
+  color: #fff;
+  font-family: 'Montserrat'; }
+
+.bg-green-thema:hover {
+  background: #318f7e;
+  color: #fff; }
+
+.bg-red {
+  background: #F44336;
+  color: #fff; }
+
+.bg-teal {
+  background: #00aba9;
+  color: #fff; }
+
+.bg-green {
+  background: #60A917;
+  color: #fff; }
+
+.bg-blue {
+  background: #3E65FF;
+  color: #fff; }
+
+.bg-blue-dark {
+  background: #1f62ac;
+  color: #fff; }
+
+.bg-orange {
+  background: #F2552C;
+  color: #fff; }
+
+.bg-white {
+  background: #fff;
+  color: #343a40; }
+
+.bg-primary {
+  background: #007BFF;
+  color: #fff; }
+
+.bg-success {
+  background: #28A745;
+  color: #fff; }
+
+.bg-info {
+  background: #17A2B8;
+  color: #fff; }
+
+.bg-danger {
+  background: #DC3545;
+  color: #fff; }
+
+.bg-secondary {
+  background: #6C757D;
+  color: #fff; }
+
+.bg-dark {
+  background: #343a40;
+  color: #fff; }
+
+.panel {
+  border: 1px solid #dbdbdb;
+  border-radius: 5px; }
+
+.border-custom {
+  border: 1px solid #dbdbdb; }
+
+.pointer {
+  cursor: pointer; }
+
 /* 
     Created on : 08/01/2019, 15:53:44
     Author     : kyomei
@@ -73,13 +296,61 @@ and open the template in the editor.
 body {
   font-family: "Open Sans", sans-serif; }
 
+/* style page home */
+section.area-option-course {
+  background-color: #f4f4f4;
+  font-family: "Quicksand", sans-serif;
+  padding: 30px 0; }
+  section.area-option-course hr {
+    margin-bottom: 100px; }
+  section.area-option-course h2 {
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 20px;
+    text-align: center; }
+  section.area-option-course .card-home {
+    position: relative;
+    padding: 40px 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 3px #2a6e64 solid;
+    margin-bottom: 50px; }
+  section.area-option-course .icone {
+    background: #2a6e64;
+    color: white;
+    position: absolute;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  section.area-option-course .descricao {
+    text-align: center; }
+    section.area-option-course .descricao h3 {
+      font-size: 22px;
+      line-height: 50px;
+      color: #116b5f;
+      font-family: "Quicksand", sans-serif;
+      font-weight: bold; }
+    section.area-option-course .descricao p {
+      font-size: 16px;
+      font-family: "Quicksand", sans-serif;
+      font-weight: bold;
+      color: #666; }
+
 /* style page quem-somos */
 section.area-about {
   padding: 44px 0; }
   section.area-about h1 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    color: #116B5F;
+    color: #28a745;
     margin: 20px 0; }
   section.area-about p {
     text-align: justify;
@@ -91,12 +362,12 @@ section.area-about {
 section.area-contact {
   padding: 24px 0; }
   section.area-contact h1 {
-    color: #116B5F;
+    color: #28a745;
     font-size: 1.6rem;
     font-weight: bold;
     font-family: "Lato", sans-serif; }
   section.area-contact h2 {
-    color: #116B5F;
+    color: #28a745;
     font-size: 1.2rem;
     font-weight: bold; }
   section.area-contact p {
@@ -104,7 +375,7 @@ section.area-contact {
   section.area-contact label {
     font-weight: bold; }
 
-/* style page fale-conosco */
+/* style page mural */
 section.area-mural {
   background: #eee;
   font-family: "Segoe UI"; }
@@ -268,11 +539,6 @@ section.area-mural {
 @media only screen and (max-width: 768px) {
   header {
     padding-top: 0px !important; }
-    header .row:first-child {
-      background-color: #116B5F !important;
-      color: #ffffff !important;
-      display: block  !important;
-      text-align: center; }
     header .contact strong {
       font-size: 18px !important; }
     header .contact div {
@@ -284,14 +550,12 @@ section.area-mural {
 header {
   padding-bottom: 7px;
   padding-top: 7px; }
-  header .row:first-child {
-    display: none; }
   header .contact {
     text-align: right; }
     header .contact strong {
       font-size: 24px;
       font-family: 'Bree Serif', sans-serif;
-      color: #116B5F; }
+      color: #28a745; }
     header .contact div {
       line-height: 17px;
       margin-top: 20px; }
@@ -307,7 +571,7 @@ header {
 
 /* navbar website */
 .navbar {
-  background: #116B5F !important;
+  background: #28a745 !important;
   padding: 0; }
 
 .nav-link {
@@ -372,344 +636,10 @@ nav.navbar-dark ul.navbar-nav a:hover { border-color: #f14444; }
 .nav li:hover:nth-child(8n+8), .nav li.active:nth-child(8n+8){
   border-bottom: #62C2E4 3px solid;
 }*/
-.col-item {
-  border: 1px solid #E1E1E1;
-  border-radius: 5px;
-  background: #FFF; }
-
-.col-item .photo img {
-  margin: 0 auto;
-  width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
-
-.col-item .info {
-  padding: 10px;
-  border-radius: 0 0 5px 5px;
-  margin-top: 1px; }
-
-.col-item:hover .info {
-  background-color: #F5F5DC; }
-
-.col-item .price {
-  /*width: 50%;*/
-  float: left;
-  margin-top: 5px; }
-
-.col-item .price h5 {
-  line-height: 20px;
-  margin: 0; }
-
-.price-text-color {
-  color: #116b5f; }
-
-.col-item .info .rating {
-  color: #777; }
-
-.col-item .rating {
-  /*width: 50%;*/
-  float: left;
-  font-size: 17px;
-  text-align: right;
-  line-height: 52px;
-  margin-bottom: 10px;
-  height: 52px; }
-
-.col-item .separator {
-  border-top: 1px solid #E1E1E1; }
-
-.clear-left {
-  clear: left; }
-
-.col-item .separator p {
-  line-height: 20px;
-  margin-bottom: 0;
-  margin-top: 10px;
-  text-align: center; }
-
-.col-item .separator p i {
-  margin-right: 5px; }
-
-.col-item .btn-add {
-  width: 50%;
-  float: left; }
-
-.col-item .btn-add {
-  border-right: 1px solid #E1E1E1; }
-
-.col-item .btn-details {
-  width: 50%;
-  float: left;
-  padding-left: 10px; }
-
-.controls {
-  margin-top: 20px; }
-
-[data-slide="prev"] {
-  margin-right: 10px; }
-
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 14/03/2018, 14:39:13
-    Author     : Rafael
-*/
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  padding: 0px;
-  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5; }
-
-.card-container {
-  padding: 2px 16px; }
-
-.card-container h2 {
-  color: #007b5e; }
-
-.card-curso {
-  border-radius: 0.35rem !important;
-  text-align: center;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
-  position: relative;
-  margin: 15px 0; }
-
-.card-curso .overlay {
-  border-radius: 0.35rem !important;
-  position: absolute;
-  left: 0;
-  top: 0;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  display: none;
-  color: white;
-  background: #4caf50; }
-
-.card-curso:hover .overlay {
-  display: block; }
-
-.card-curso .overlay-content {
-  padding: 40px 40px 0px 40px; }
-
-.card-curso .plus-sign {
-  font-size: 36px;
-  font-weight: bold;
-  margin-left: 180px;
-  margin-top: -25px; }
-
-/* Card home cursos */
-.card-home {
-  position: relative;
-  padding: 40px 20px 0 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  border-bottom: 3px #2a6e64 solid;
-  margin-bottom: 50px; }
-
-.card-home-container {
-  margin-top: 120px;
-  text-align: center; }
-
-.card-home-container div {
-  margin-top: 12px; }
-
-.card-home-img {
-  background: #2a6e64;
-  color: white;
-  position: absolute;
-  top: -50px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
-.card-home h1 {
-  font-size: 22px;
-  line-height: 50px;
-  color: #116b5f;
-  font-family: "Quicksand";
-  font-weight: bold; }
-
-.card-home p {
-  font-size: 16px;
-  font-family: "Quicksand";
-  font-weight: bold;
-  color: #666; }
-
-.card-home-title {
-  font-weight: bold;
-  color: #116b5f;
-  margin-bottom: 20px;
-  text-align: center; }
-
-.entry {
-  position: relative;
-  width: 100%;
-  height: 150px;
-  background: white;
-  margin: 15px;
-  overflow: hidden;
-  float: left;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15); }
-
-.entry:hover img {
-  right: 0px;
-  top: -5px;
-  -moz-transform: scale(0.9, 0.9);
-  -ms-transform: scale(0.9, 0.9);
-  -webkit-transform: scale(0.9, 0.9);
-  transform: scale(0.9, 0.9); }
-
-.entry:hover aside {
-  left: -125px;
-  transition: all 0.75s ease;
-  opacity: 0; }
-
-.entry:hover i {
-  left: 110px;
-  opacity: 1;
-  -moz-transform: scale(0.7, 0.7);
-  -ms-transform: scale(0.7, 0.7);
-  -webkit-transform: scale(0.7, 0.7);
-  transform: scale(0.7, 0.7); }
-
-.entry i {
-  border-radius: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 80px;
-  height: 80px;
-  display: block;
-  position: absolute;
-  left: 260px;
-  top: 48px;
-  text-align: center;
-  line-height: 72px;
-  color: white;
-  font-family: "effra";
-  font-size: 100px;
-  font-weight: bold;
-  opacity: 0;
-  transition: all 0.5s ease;
-  -moz-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1); }
-
-.entry i:after {
-  content: '+'; }
-
-.entry aside {
-  width: 100px;
-  padding: 35px 15px 30px 25px;
-  z-index: 100;
-  position: relative;
-  left: 0px;
-  transition: all 0.5s ease; }
-
-.entry strong {
-  font-family: "effra";
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 14px;
-  color: #333; }
-
-.entry p {
-  font-family: "Arial";
-  font-size: 13px;
-  margin-top: 20px;
-  color: #888; }
-
-.entry a {
-  display: block;
-  width: inherit;
-  height: inherit; }
-
-.entry a:hover {
-  cursor: pointer; }
-
-.entry a img {
-  position: absolute;
-  top: 0px;
-  right: -125px;
-  transition: all 0.5s ease; }
-
-.entry ul {
-  position: absolute;
-  display: block;
-  bottom: -5px;
-  width: inherit; }
-
-.entry li {
-  display: inline-block;
-  height: 5px;
-  width: 33.33%;
-  background-color: red;
-  overflow: hidden;
-  bottom: 0px;
-  position: relative;
-  bottom: 0px; }
-
-.entry:hover li {
-  background-color: blue; }
-
-/* cards pacote de cursos */
-.index-content a:hover {
-  color: black;
-  text-decoration: none; }
-
-.index-content {
-  margin-bottom: 20px;
-  padding: 50px 0px; }
-
-.index-content .card {
-  background-color: #FFFFFF;
-  padding: 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-  position: relative; }
-
-.index-content .card .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  color: white;
-  padding: 5px;
-  text-shadow: #000 1px 1px 1px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px; }
-
-.index-content .card .overlay p {
-  padding: 0px;
-  margin: 0px; }
-
-.index-content .card:hover {
-  box-shadow: 0 6px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 20px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-  color: black; }
-
-.index-content .card img {
-  width: 100%;
-  border-radius: 4px; }
-
-.index-content .card h1 {
-  margin: 20px; }
-
 /* footer website */
 footer {
   color: #ffffff;
-  background-color: #116B5F;
+  background-color: #28a745;
   padding-top: 20px; }
   footer .copyright {
     background-color: #343A40;

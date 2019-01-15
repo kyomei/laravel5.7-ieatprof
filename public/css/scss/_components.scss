@@ -5,13 +5,21 @@
 
 /* button */
 .btn-default {
-    background: #2A6E64;
+    background: $color1;
     color: #fff;
     //font-family: 'Montserrat';
     &:hover {
         background: #318f7e; 
         color:#fff;
     }
+}
+/* hr */
+.hr-custom {
+    border: 2px solid $color1;
+    border-top: none;
+    text-align: center !important;
+    width: 100px;
+    margin: 0 auto;
 }
 /* breadcrumb */
 .area-breadcrumb{
@@ -29,11 +37,100 @@
 .carousel-inner {
     height: auto !important;
 }
-  .carousel-inner img {
-      width: 100%;
-      height: auto;
-  }
-  .carousel-item {
-      min-height: 100px !important;
-      height: auto !important;
-  }
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+.carousel-item {
+    min-height: 100px !important;
+    height: auto !important;
+}
+
+
+
+
+/* btn animate */
+.btn-animate{
+    -vendor-animation-duration: 4s !important;
+    -vendor-animation-delay: 2s !important;
+    -vendor-animation-iteration-count: infinite !important;
+    animation-duration: 4s !important;
+    animation-delay: 2s !important;
+    animation-iteration-count: infinite !important;
+}
+/* paddings */
+.padding10{padding: 10px;}
+.padding20{padding: 20px;}
+.padding30{padding: 30px;}
+.padding40{padding: 40px;}
+.padding50{padding: 50px;}
+
+.padding-top10{padding-top: 10px;}
+.padding-top20{padding-top: 20px;}
+.padding-top30{padding-top: 30px;}
+.padding-top40{padding-top: 40px;}
+.padding-top50{padding-top: 50px;}
+
+.padding-bottom10{padding-bottom: 10px; }
+.padding-bottom20{padding-bottom: 20px;}
+.padding-bottom30{padding-bottom: 30px;}
+.padding-bottom40{padding-bottom: 40px;}
+.padding-bottom50{padding-bottom: 50px;}
+
+/* margins */
+.margin-top10{margin-top: 10px;}
+.margin-top20{margin-top: 20px;}
+.margin-top30{margin-top: 30px;}
+.margin-top40{margin-top: 40px;}
+.margin-top50{margin-top: 50px;}
+.margin-top60{margin-top: 60px;}
+.margin-top70{margin-top: 70px;}
+.margin-top80{margin-top: 80px;}
+.margin-top90{margin-top: 90px;}
+.margin-top100{margin-top: 100px;}
+
+.margin-bottom10{margin-bottom: 10px; }
+.margin-bottom20{margin-bottom: 20px;}
+.margin-bottom30{margin-bottom: 30px;}
+.margin-bottom40{margin-bottom: 40px;}
+.margin-bottom50{margin-bottom: 50px;}
+.margin-bottom60{margin-bottom: 60px; }
+.margin-bottom70{margin-bottom: 70px;}
+.margin-bottom80{margin-bottom: 80px;}
+.margin-bottom90{margin-bottom: 90px;}
+.margin-bottom100{margin-bottom: 100px;}
+
+/* borders */
+.form-cart .form-group label{color:#333; font-family: 'Advent Pro'; font-size: 16px;}
+.form-cart .form-group{border-bottom: 1px solid #ddd; padding: 20px 0px;}
+.form-cart .form-group:last-child{border: none;}
+
+.back-white{background: #fff;}
+
+.color-green{color:#60A917;}
+.color-red{color:#F44336;}
+
+.btn-custom{background: #104547; border-bottom: 2px #0f3d46 solid; color:white;}
+.btn-custom:hover{background: #0f3d46; color:white;}
+
+/* Backgrounds colors */
+.bg-green-thema{background: #2A6E64; color:#fff;font-family: 'Montserrat';}
+.bg-green-thema:hover{background: #318f7e; color:#fff;}
+.bg-red{background: #F44336; color: #fff;}
+.bg-teal{background: #00aba9; color: #fff;}
+.bg-green{background: #60A917; color: #fff;}
+.bg-blue{background: #3E65FF; color: #fff;}
+.bg-blue-dark{background: #1f62ac; color: #fff;}
+.bg-orange{background: #F2552C; color: #fff;}
+.bg-white{background: #fff; color: #343a40;}
+
+.bg-primary{background: #007BFF; color:#fff;}
+.bg-success{background: #28A745; color:#fff;}
+.bg-info{background: #17A2B8; color:#fff;}
+.bg-danger{background: #DC3545; color:#fff;}
+.bg-secondary{background: #6C757D; color:#fff;}
+.bg-dark{background: #343a40; color:#fff;}
+.panel{border: 1px solid #dbdbdb;  border-radius: 5px;}
+.border-custom{border: 1px solid #dbdbdb;}
+
+.pointer {cursor: pointer;}
