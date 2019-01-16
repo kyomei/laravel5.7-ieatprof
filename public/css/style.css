@@ -32,6 +32,10 @@ body {
     Created on : 08/01/2019, 10:53:44
     Author     : kyomei
 */
+/* body */
+body {
+  background-color: #f8fafc; }
+
 /* button */
 .btn-default {
   background: #28a745;
@@ -56,7 +60,7 @@ body {
   background-color: #F4F4F4;
   padding-top: 20px; }
   .breadcrumb li a {
-    color: #2a6e64; }
+    color: #28a745; }
 
 /* Make the image fully responsive */
 .carousel-inner {
@@ -375,6 +379,96 @@ section.area-contact {
   section.area-contact label {
     font-weight: bold; }
 
+/* style page cursos-livres */
+/* All Devices */
+section.area-course {
+  margin-bottom: 20px; }
+  section.area-course .row div {
+    margin-bottom: 20px; }
+  section.area-course .card-curso {
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15); }
+    section.area-course .card-curso :hover .overlay {
+      display: block; }
+    section.area-course .card-curso .overlay {
+      border-radius: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: none;
+      width: 100%;
+      height: 100%;
+      color: white;
+      background: #4caf50;
+      margin: auto; }
+    section.area-course .card-curso .overlay-content {
+      position: relative;
+      top: 35%; }
+    section.area-course .card-curso .plus-sign {
+      position: absolute;
+      bottom: -8px;
+      right: 8%;
+      font-weight: bold; }
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+  div.area-course-qtde h2 {
+    color: #28a745;
+    font-size: 24px; }
+  div.area-course-qtde .line {
+    height: 1px;
+    background: #116B5F;
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 50px #28a745 solid;
+    margin: 0 auto 10px;
+    max-width: 60%;
+    text-align: center; }
+  div.area-course-qtde .lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #6c757d; } }
+/* Tablet Styles */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  div.area-course-qtde h2 {
+    color: #28a745;
+    font-size: 36px; }
+  div.area-course-qtde .line {
+    height: 1px;
+    background: #116B5F;
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 80px #28a745 solid;
+    margin: 0 auto 10px;
+    max-width: 60%;
+    text-align: center; }
+  div.area-course-qtde .lead {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #6c757d; } }
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  div.area-course-qtde h2 {
+    color: #28a745;
+    font-size: 48px; }
+  div.area-course-qtde .line {
+    height: 1px;
+    background: #116B5F;
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 80px #28a745 solid;
+    margin: 0 auto 10px;
+    max-width: 60%;
+    text-align: center; }
+  div.area-course-qtde .lead {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #6c757d; } }
 /* style page mural */
 section.area-mural {
   background: #eee;

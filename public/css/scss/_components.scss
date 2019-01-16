@@ -3,6 +3,10 @@
     Author     : kyomei
 */
 
+/* body */
+body {
+    background-color: $body-bg;
+}
 /* button */
 .btn-default {
     background: $color1;
@@ -29,7 +33,7 @@
     background-color: #F4F4F4; 
     padding-top: 20px;
     li a {
-        color: #2a6e64;
+        color: $color1;
     }
 }
 
