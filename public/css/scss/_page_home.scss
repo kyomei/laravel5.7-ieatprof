@@ -1,0 +1,71 @@
+/* All Devices */
+
+section.area-option-course {    
+    background-color: #f4f4f4;
+    font-family: $font-quicksand;
+    padding: 30px 0;
+    hr {
+        margin-bottom: 100px;
+    }
+    h2 {
+        font-weight: bold;
+        color: $color1;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .card-home {
+        position: relative;
+        padding: 40px 20px 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 3px $color1 solid;
+        margin-bottom: 50px;
+    }
+    .icone{
+        background: $color1;
+        color: white;
+        position: absolute;
+        top: -50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descricao{
+        text-align: center;
+        h3 {
+            font-size: 22px;
+            line-height: 50px;
+            color: $color1;
+            font-family: $font-quicksand;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            font-family: $font-quicksand;
+            font-weight: bold;
+            color: #666;
+        }
+    }
+}
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+    
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+    
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    
+}

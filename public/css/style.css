@@ -301,6 +301,7 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 /* style page home */
+/* All Devices */
 section.area-option-course {
   background-color: #f4f4f4;
   font-family: "Quicksand", sans-serif;
@@ -320,10 +321,10 @@ section.area-option-course {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border-bottom: 3px #2a6e64 solid;
+    border-bottom: 3px #28a745 solid;
     margin-bottom: 50px; }
   section.area-option-course .icone {
-    background: #2a6e64;
+    background: #28a745;
     color: white;
     position: absolute;
     top: -50px;
@@ -339,7 +340,7 @@ section.area-option-course {
     section.area-option-course .descricao h3 {
       font-size: 22px;
       line-height: 50px;
-      color: #116b5f;
+      color: #28a745;
       font-family: "Quicksand", sans-serif;
       font-weight: bold; }
     section.area-option-course .descricao p {
@@ -348,6 +349,9 @@ section.area-option-course {
       font-weight: bold;
       color: #666; }
 
+/* Mobile Styles */
+/* Tablet Styles */
+/* Desktop Styles */
 /* style page quem-somos */
 section.area-about {
   padding: 44px 0; }
@@ -470,6 +474,37 @@ section.area-course {
     line-height: 1.4;
     color: #6c757d; } }
 /* style page mural */
+/* All Devices */
+section.area-timelane ul.timeline {
+  list-style-type: none;
+  position: relative; }
+section.area-timelane ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400; }
+section.area-timelane ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px; }
+section.area-timelane ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400; }
+
+/* Mobile Styles */
+/* Tablet Styles */
+/* Desktop Styles */
 section.area-mural {
   background: #eee;
   font-family: "Segoe UI"; }

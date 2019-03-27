@@ -1,0 +1,2 @@
+[16-Jan-2019 10:30:55 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home/ieatprof/public_html/laravel.ieatprofissionalizante.com.br/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18
+[16-Jan-2019 10:31:01 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home/ieatprof/public_html/laravel.ieatprofissionalizante.com.br/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18

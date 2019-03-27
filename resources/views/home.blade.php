@@ -18,7 +18,7 @@
                     <div class="descricao">
                         <h3>Cursos livres</h3>
                         <p>Temos cursos rápidos e completos, com aulas interativas e intuitivas e com preços que cabe no seu bolso, faça já sua inscrição e esteja preparado para novas oportunidades.</p>
-                        <p class="text-right"><a class="btn bg-green-thema" href="https://ieatprofissionalizante.com.br/cursos/cursos-livres" role="button">Ver cursos &raquo;</a></p>
+                        <p class="text-right"><a class="btn btn-default" href="https://ieatprofissionalizante.com.br/cursos/cursos-livres" role="button">Ver cursos &raquo;</a></p>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     <div class="descricao">
                         <h3>Pacote de cursos</h3>
                         <p>Conheça nossos pacotes de cursos feitos para você, aqui você encontra cursos completos de Informática, Auxiliar Administrativo, Inglês, Como ser Youtuber e entre outros.</p>
-                        <p class="text-right"><a class="btn bg-green-thema" href="https://ieatprofissionalizante.com.br/cursos/pacote-de-cursos" role="button">Ver cursos &raquo;</a></p>
+                        <p class="text-right"><a class="btn btn-default" href="https://ieatprofissionalizante.com.br/cursos/pacote-de-cursos" role="button">Ver cursos &raquo;</a></p>
                     </div>
                 </div>
             </div>
