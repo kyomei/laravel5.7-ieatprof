@@ -1,17 +1,18 @@
 
 /* footer website */
 footer {
-    color: $color2;
-    background-color: $color1;
+    color: $white;
+    background-color: $color-primary;
     padding-top: 20px;
+    
     .copyright {
         background-color: $dark;
         font-size: 16px;
         text-align: center;
-        color: $color2;
+        color: $white;
         padding-top:5px;
         a{
-            color: $color2;
+            color: $white;
         }
     }
     h1{

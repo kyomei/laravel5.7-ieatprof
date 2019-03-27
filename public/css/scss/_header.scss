@@ -22,11 +22,12 @@ header {
     padding-bottom: 7px;
     padding-top: 7px;
     .contact {
+        color: $color-primary;
         text-align: right;
         strong {
             font-size: 24px;
             font-family: 'Bree Serif', sans-serif;
-            color: $color1;
+            color: $color-primary;
         }
         div {
             line-height: 17px;

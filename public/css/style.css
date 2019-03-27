@@ -38,7 +38,7 @@ body {
 
 /* button */
 .btn-default {
-  background: #28a745;
+  background: #2A6E64;
   color: #fff; }
   .btn-default:hover {
     background: #318f7e;
@@ -46,7 +46,7 @@ body {
 
 /* hr */
 .hr-custom {
-  border: 2px solid #28a745;
+  border: 2px solid #2A6E64;
   border-top: none;
   text-align: center !important;
   width: 100px;
@@ -310,7 +310,7 @@ section.area-option-course {
     margin-bottom: 100px; }
   section.area-option-course h2 {
     font-weight: bold;
-    color: #28a745;
+    color: #2A6E64;
     margin-bottom: 20px;
     text-align: center; }
   section.area-option-course .card-home {
@@ -321,10 +321,10 @@ section.area-option-course {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border-bottom: 3px #28a745 solid;
+    border-bottom: 3px #2A6E64 solid;
     margin-bottom: 50px; }
   section.area-option-course .icone {
-    background: #28a745;
+    background: #2A6E64;
     color: white;
     position: absolute;
     top: -50px;
@@ -340,7 +340,7 @@ section.area-option-course {
     section.area-option-course .descricao h3 {
       font-size: 22px;
       line-height: 50px;
-      color: #28a745;
+      color: #2A6E64;
       font-family: "Quicksand", sans-serif;
       font-weight: bold; }
     section.area-option-course .descricao p {
@@ -680,11 +680,12 @@ header {
   padding-bottom: 7px;
   padding-top: 7px; }
   header .contact {
+    color: #2A6E64;
     text-align: right; }
     header .contact strong {
       font-size: 24px;
       font-family: 'Bree Serif', sans-serif;
-      color: #28a745; }
+      color: #2A6E64; }
     header .contact div {
       line-height: 17px;
       margin-top: 20px; }
@@ -700,7 +701,7 @@ header {
 
 /* navbar website */
 .navbar {
-  background: #28a745 !important;
+  background: #2A6E64 !important;
   padding: 0; }
 
 .nav-link {
@@ -768,7 +769,7 @@ nav.navbar-dark ul.navbar-nav a:hover { border-color: #f14444; }
 /* footer website */
 footer {
   color: #ffffff;
-  background-color: #28a745;
+  background-color: #2A6E64;
   padding-top: 20px; }
   footer .copyright {
     background-color: #343A40;

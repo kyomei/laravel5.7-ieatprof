@@ -9,7 +9,7 @@ section.area-option-course {
     }
     h2 {
         font-weight: bold;
-        color: $color1;
+        color: $color-primary;
         margin-bottom: 20px;
         text-align: center;
     }
@@ -21,11 +21,11 @@ section.area-option-course {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        border-bottom: 3px $color1 solid;
+        border-bottom: 3px $color-primary solid;
         margin-bottom: 50px;
     }
     .icone{
-        background: $color1;
+        background: $color-primary;
         color: white;
         position: absolute;
         top: -50px;
@@ -43,7 +43,7 @@ section.area-option-course {
         h3 {
             font-size: 22px;
             line-height: 50px;
-            color: $color1;
+            color: $color-primary;
             font-family: $font-quicksand;
             font-weight: bold;
         }

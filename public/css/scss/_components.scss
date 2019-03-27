@@ -9,7 +9,7 @@ body {
 }
 /* button */
 .btn-default {
-    background: $color1;
+    background: $color-primary;
     color: #fff;
     //font-family: 'Montserrat';
     &:hover {
@@ -19,7 +19,7 @@ body {
 }
 /* hr */
 .hr-custom {
-    border: 2px solid $color1;
+    border: 2px solid $color-primary;
     border-top: none;
     text-align: center !important;
     width: 100px;
