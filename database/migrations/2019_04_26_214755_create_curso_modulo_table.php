@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateModulosTable extends Migration
+class CreateCursoModuloTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,20 +13,25 @@ class CreateModulosTable extends Migration
      */
     public function up()
     {
-        Schema::create('modulos', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nome', 100);
-            $table->longText('descricao')->nullable();
-            $table->unsignedSmallInteger('horas')->nullable()->default(0);
-            $table->unsignedSmallInteger('meses')->nullable()->default(0);
-            $table->boolean('status')->nullable()->default(1);
-            $table->string('color', 10)->nullable();
-            $table->string('imagem', 255)->nullable();
-            $table->string('slug', 255)->nullable();
+        Schema::create('curso_modulo', function (Blueprint $table) {
             
+            
+            $table->increments('id');
+            $table->integer('curso_id')->unsigned();
+            $table->integer('modulo_id')->unsigned();
+            $table->char('order', 2);
+
+            $table->foreign('curso_id')
+                ->references('id')->on('cursos')
+                ->onDelete('cascade');
+
+            $table->foreign('modulo_id')
+                ->references('id')->on('modulos')
+                ->onDelete('cascade');
+
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
-            
+
 
             $table->engine = 'InnoDB';
             $table->charset = 'utf8';
@@ -41,6 +46,6 @@ class CreateModulosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('modulos');
+        Schema::dropIfExists('curso_modulo');
     }
 }

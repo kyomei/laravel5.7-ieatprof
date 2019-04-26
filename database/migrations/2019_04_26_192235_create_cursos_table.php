@@ -19,11 +19,14 @@ class CreateCursosTable extends Migration
             $table->longText('descricao')->nulllabe();
             $table->unsignedSmallInteger('horas')->nullable()->default(0);
             $table->unsignedSmallInteger('meses')->nullable()->default(0);
-            $table->tinyInteger('status')->nullable()->default(0);
+            $table->boolean('active')->nullable()->default(1);
             $table->string('color', 10)->nullable();
             $table->string('imagem', 255)->nullable();
-            $table->string('slug', 255)->nullable();
-            $table->timestamps();
+            $table->string('slug', 255)->nullable()->unique();
+            
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
+
 
             $table->engine = 'InnoDB';
             $table->charset = 'utf8';

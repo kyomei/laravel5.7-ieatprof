@@ -18,14 +18,17 @@ class CreateUsuariosTable extends Migration
             $table->string('nome', 100)->nullable();
             $table->string('email', 100)->unique();
             $table->string('senha', 60);
-            $table->enum('cargo', array('admin', 'autor'));
+            $table->enum('cargo', array('admin', 'usuario'));
+            $table->boolean('active');
             $table->rememberToken();
-            $table->string('imagem', 255)->nullable();
-            $table->timestamps();
+            $table->string('imagem', 255)->nullable();            
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
 
             $table->engine = 'InnoDB';
             $table->charset = 'utf8';
             $table->collation = 'utf8_general_ci';
+
         });
     }
 
