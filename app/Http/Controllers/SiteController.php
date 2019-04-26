@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace escola\Http\Controllers;
 
-use App\User;
-use App\Http\Controllers\Controller;
+use escola\User;
+use escola\Http\Controllers\Controller;
 // Classe para acessar metodos do banco de dados
 use Illuminate\Support\Facades\DB;
 
