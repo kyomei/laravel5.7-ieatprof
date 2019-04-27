@@ -21,4 +21,6 @@ Route::get('/cursos/cursos-livres/{name}', 'SiteController@cursos_livres_detalhe
 Route::get('/cursos/pacote-de-cursos','SiteController@pacote_de_cursos');
 
 Route::get('/painel', 'PainelController@login');
-
+Route::get('/painel/register', 'PainelController@register');
+Route::get('/painel/index', 'PainelController@dashboard');
+Route::get('painel/usuarios', 'UsuariosController@lista');
