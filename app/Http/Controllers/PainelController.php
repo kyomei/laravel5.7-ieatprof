@@ -7,6 +7,6 @@ use escola\Http\Controllers\Controller;
 class PainelController extends Controller {
 
 	public function login() {
-		
+		return view('painel.login');
 	}
 }
