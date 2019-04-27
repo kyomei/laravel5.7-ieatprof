@@ -22,6 +22,17 @@ class UsuariosController extends Controller {
 	}
 
 	public function insert() {
+
+		$nome = Request::input('nome');
+		$email = Request::input('email');
+		$senha = Request::input('senha');
+		$cargo = Request::input('cargo');
+
+		DB::insert('INSERT INTO usuarios (nome, email, senha, cargo) VALUES (?,?,?,?)', array($nome, $email, $senha, $cargo));
+		return redirect()->action('UsuariosController@lista');
+	}
+
+	public function insert2() {
 		/*
 		$usuario = new Usuario();
 		$usuario->nome = Request::input('nome');

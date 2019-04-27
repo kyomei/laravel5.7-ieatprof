@@ -38,7 +38,7 @@
                     <div class="col-12">
                         <div class="form-group">
                             <label>Cargo</label>
-                            <select name="status" class="form-control">
+                            <select name="cargo" class="form-control">
                                 <option value="admin">Administrador</option>
                                 <option value="usuario">Usuário</option>
                             </select>

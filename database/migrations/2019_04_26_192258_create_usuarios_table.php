@@ -19,7 +19,7 @@ class CreateUsuariosTable extends Migration
             $table->string('email', 100)->unique();
             $table->string('senha', 60);
             $table->enum('cargo', array('admin', 'usuario'));
-            $table->boolean('active');
+            $table->boolean('active')->default(1);
             $table->rememberToken();
             $table->string('imagem', 255)->nullable();            
             $table->timestamp('created_at')->useCurrent();
