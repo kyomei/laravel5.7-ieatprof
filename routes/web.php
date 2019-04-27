@@ -23,4 +23,9 @@ Route::get('/cursos/pacote-de-cursos','SiteController@pacote_de_cursos');
 Route::get('/painel', 'PainelController@login');
 Route::get('/painel/register', 'PainelController@register');
 Route::get('/painel/index', 'PainelController@dashboard');
+
 Route::get('painel/usuarios', 'UsuariosController@lista');
+Route::get('painel/usuarios/adicionar', 'UsuariosController@adicionar');
+Route::post('painel/usuarios/insert', 'UsuariosController@insert');
+Route::get('painel/usuarios/editar', 'UsuariosController@editar');
+Route::get('painel/usuarios/excluir', 'UsuariosController@excluir');
