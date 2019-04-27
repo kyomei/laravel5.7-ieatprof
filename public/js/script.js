@@ -17,14 +17,12 @@ $(document).ready(function() {
 			}
 		});
 		//$('#user-add').modal({shown:true});
-	});	*/-
-	
+	});	*/
 	$('a[data-modal]').bind('click', function(e) {
 		e.preventDefault();
 
 		var nameModal = $(this).attr('data-modal');
 		var link = $(this).attr('href');
-		//var usuario = $('a[data-modal]').closest('<tr>')
 		$.ajax({
 			url: link,
 			success: function(data) {

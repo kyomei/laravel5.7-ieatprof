@@ -38,7 +38,7 @@
 <hr />
 
 <table class="table table-hover bg-white table-striped">
-    <thead class="thead-dark">
+    <thead class="bg-primary text-white">
       <tr>
       	<th>#</th>
         <th>Nome</th>

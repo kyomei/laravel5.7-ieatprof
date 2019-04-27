@@ -8,11 +8,11 @@
             <span aria-hidden="true">×</span>
           </button>
         </div>
-       	<form action="{{action('UsuariosController@insert')}}" method="POST">
-        	<div class="modal-body">
-                <input type="hidden" name="_token" value="{{{ csrf_token() }}}">      	
+        <form action="{{action('UsuariosController@insert')}}" method="POST">
+            <div class="modal-body">
+                <input type="hidden" name="_token" value="{{{ csrf_token() }}}">        
                 <div class="row">
-                    <div class="col-12">					
+                    <div class="col-12">                    
                         <div class="form-group">
                             <label>Nome</label><input type="text" class="form-control" name="nome" placeholder="Nome" required>
                         </div>
@@ -45,11 +45,11 @@
                         </div>
                     </div>
                 </div>
-	        </div>
-	        <div class="modal-footer">
-	          <button class="btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-	          <button type="submit" class="btn btn-sm btn-primary">Salvar</button>
-	        </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-sm btn-primary">Salvar</button>
+            </div>
         </form>
       </div>
     </div>

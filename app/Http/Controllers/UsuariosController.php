@@ -25,37 +25,28 @@ class UsuariosController extends Controller {
 		return view('painel.Usuarios.adicionar');
 	}
 
-	public function insert2() {
-
-		$nome = Request::input('nome');
-		$email = Request::input('email');
-		$senha = Request::input('senha');
-		$cargo = Request::input('cargo');
-
-		DB::insert('INSERT INTO usuarios (nome, email, senha, cargo) VALUES (?,?,?,?)', array($nome, $email, $senha, $cargo));
-		return redirect()->action('UsuariosController@lista')->WithInput(Request::only('nome'));
-	}
-
 	public function insert(UsuariosRequest $request) {
-		/*
-		$params = Request::all();
-		$usuario = new Usuario($params);
-		$usuario->save();*/
+		$nome = Request::input('nome');
 		Usuario::create(Request::all());
-		//Request::session()->flash('status', '<strong>Successo!</strong> O usuário '.$);
+		Request::session()->flash('status', '<strong>Successo!</strong> O usuário '.$nome. ' foi adicionado.');
 		return redirect()->action('UsuariosController@lista');
 	}
 
 	public function editar($id) {
-
+		$usuario = Usuario::find($id);
+		return view('painel.Usuarios.editar')->with('usuario', $usuario);
 	}
 
-	public function update() {
-
-	}
+	public function update($id, UsuariosRequest $request) {
+		
+		$nome = Request::input('nome');
+		$user = Usuario::findOrFail($id);
+		$user->update($request->all());
+		Request::session()->flash('status', '<strong>Sucesso!</strong> O usuário '.$nome. ' foi atualizado.');
+		return redirect()->action('UsuariosController@lista');
+ 	}
 
 	public function excluir($id) {
-		//echo "ID DO ITEM: $id";
 		return view('painel.Usuarios.excluir')->with('id', $id);
 	}
 
