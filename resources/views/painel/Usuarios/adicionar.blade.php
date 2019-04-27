@@ -1,5 +1,5 @@
 <!-- Modal default -->
-  <div class="modal fade" id="defaultModalUser" tabindex="-1" role="dialog" aria-labelledby="defaultModal" aria-hidden="true">
+  <div class="modal fade" id="modal_usuarioAdicionar" tabindex="-1" role="dialog" aria-labelledby="defaultModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -14,19 +14,19 @@
                 <div class="row">
                     <div class="col-12">					
                         <div class="form-group">
-                            <label>Nome</label><input type="text" class="form-control" name="nome" placeholder="Nome">
+                            <label>Nome</label><input type="text" class="form-control" name="nome" placeholder="Nome" required>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" class="form-control" name="email" placeholder="Email">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Senha</label>
-                            <input type="password" class="form-control" name="senha" placeholder="Senha">
+                            <input type="password" class="form-control" name="senha" placeholder="Senha" required>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -47,8 +47,8 @@
                 </div>
 	        </div>
 	        <div class="modal-footer">
-	          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-	          <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Salvar</button>
+	          <button class="btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+	          <button type="submit" class="btn btn-sm btn-primary">Salvar</button>
 	        </div>
         </form>
       </div>

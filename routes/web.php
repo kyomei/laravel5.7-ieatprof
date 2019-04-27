@@ -27,5 +27,6 @@ Route::get('/painel/index', 'PainelController@dashboard');
 Route::get('painel/usuarios', 'UsuariosController@lista');
 Route::get('painel/usuarios/adicionar', 'UsuariosController@adicionar');
 Route::post('painel/usuarios/insert', 'UsuariosController@insert');
-Route::get('painel/usuarios/editar', 'UsuariosController@editar');
-Route::get('painel/usuarios/excluir', 'UsuariosController@excluir');
+Route::get('painel/usuarios/editar/{id}', 'UsuariosController@editar')->where('id', '[0-9]+');
+Route::get('painel/usuarios/excluir/{id}', 'UsuariosController@excluir')->where('id', '[0-9]+');
+Route::get('painel/usuarios/delete/{id}', 'UsuariosController@delete')->where('id', '[0-9]+');

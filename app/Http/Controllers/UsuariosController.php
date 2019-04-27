@@ -3,7 +3,7 @@
 namespace escola\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
-//use Illuminate\Support\Facades\Validator;
+use escola\Http\Requests\UsuariosRequest;
 use escola\Usuario;
 use Request;
 
@@ -13,7 +13,11 @@ class UsuariosController extends Controller {
 
 		$data['nav_active'] = 'usuarios';
 
+
 		$data['usuarios'] = Usuario::all();
+		$data['total'] = Usuario::count();
+		$data['perPage'] = 10;
+
 		return view('painel.Usuarios.listagem', $data);
 	}
 
@@ -21,7 +25,7 @@ class UsuariosController extends Controller {
 		return view('painel.Usuarios.adicionar');
 	}
 
-	public function insert() {
+	public function insert2() {
 
 		$nome = Request::input('nome');
 		$email = Request::input('email');
@@ -29,25 +33,20 @@ class UsuariosController extends Controller {
 		$cargo = Request::input('cargo');
 
 		DB::insert('INSERT INTO usuarios (nome, email, senha, cargo) VALUES (?,?,?,?)', array($nome, $email, $senha, $cargo));
+		return redirect()->action('UsuariosController@lista')->WithInput(Request::only('nome'));
+	}
+
+	public function insert(UsuariosRequest $request) {
+		/*
+		$params = Request::all();
+		$usuario = new Usuario($params);
+		$usuario->save();*/
+		Usuario::create(Request::all());
+		//Request::session()->flash('status', '<strong>Successo!</strong> O usuário '.$);
 		return redirect()->action('UsuariosController@lista');
 	}
 
-	public function insert2() {
-		/*
-		$usuario = new Usuario();
-		$usuario->nome = Request::input('nome');
-		$usuario->email = Request::input('email');
-		$usuario->senha = Request::input('senha');
-
-		$usuario->save();
-		*/
-		$params = Request::all();
-		$usuario = new Usuario($params);
-		$usuario->save();
-		return $params;
-	}
-
-	public function editar() {
+	public function editar($id) {
 
 	}
 
@@ -55,11 +54,21 @@ class UsuariosController extends Controller {
 
 	}
 
-	public function excluir() {
-
+	public function excluir($id) {
+		//echo "ID DO ITEM: $id";
+		return view('painel.Usuarios.excluir')->with('id', $id);
 	}
 
-	public function delete() {
+	public function delete($id) {
 
+		// Busca usuário que será excluído
+		$user = Usuario::find($id);
+
+		// Criar uma session com uma mensagem
+		Request::session()->flash('status', '<strong>Sucesso!</strong> O Usuário  '.$user->nome.' foi removido.');
+
+		// Exclui o usuário e redireciona para lista
+		$user->delete();
+		return redirect()->action('UsuariosController@lista');
 	}
 }

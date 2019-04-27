@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
 	$('[data-toggle="tooltip"]').tooltip();  
-	
-	$('a[data-modal="user-add"]').bind('click', function(e){
+
+	/*$('a[data-modal="user-add"]').bind('click', function(e){
 		// Cancela ação do href
 		e.preventDefault();
 
@@ -17,5 +17,40 @@ $(document).ready(function() {
 			}
 		});
 		//$('#user-add').modal({shown:true});
-	});	
+	});	*/-
+	
+	$('a[data-modal]').bind('click', function(e) {
+		e.preventDefault();
+
+		var nameModal = $(this).attr('data-modal');
+		var link = $(this).attr('href');
+		//var usuario = $('a[data-modal]').closest('<tr>')
+		$.ajax({
+			url: link,
+			success: function(data) {
+				$("#modal-area").html(data);
+				$("#"+nameModal).modal({shown:true});
+			}
+		});
+	});
+	/*
+
+	$('a[data-modal]').bind('click', function(e) {
+		e.preventDefault();
+
+		var acao = $(this).attr('data-modal');
+		var link = $(this).attr('href');
+
+		$.ajax({
+			url: link,
+			success: function(html) {
+				//alert(link);
+				
+				$("body").append(html);
+				$("#modalUserExcluir").modal({shown:true});
+			}
+		});
+	});*/
+
+
 });
